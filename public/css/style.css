@@ -10,4 +10,18 @@
   list-style: none;
 }
 
+body {
+  width: 100%;
+  overflow-x: hidden;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+body h1,
+body h2,
+body h3,
+body h4 {
+  font-family: "Raleway";
+  font-weight: 300;
+  letter-spacing: 0.15rem;
+}
+
 /*# sourceMappingURL=style.css.map */
