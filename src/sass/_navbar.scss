@@ -1,14 +1,14 @@
 nav {
   width: 100%;
-  height: 70px;
+  height: 60px;
   display: flex;
   position: fixed;
-  transition: 0.8s;
+  transition: 0.75s;
 
   .nav_container {
     width: 1200px;
     margin: 0 auto;
-    padding: 5px 0;
+    padding: 3px 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -25,9 +25,14 @@ nav {
     justify-content: space-between;
     font-weight: 300;
     color: $textColor;
+    transition: 0.75s;
   }
 
   &:hover {
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: $mainColor;
+
+    .nav_links {
+      color: $white;
+    }
   }
 }
