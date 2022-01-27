@@ -3,6 +3,7 @@ nav {
   height: 70px;
   display: flex;
   position: fixed;
+  transition: 0.8s;
 
   .nav_container {
     width: 1200px;
@@ -24,5 +25,9 @@ nav {
     justify-content: space-between;
     font-weight: 300;
     color: $textColor;
+  }
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.7);
   }
 }

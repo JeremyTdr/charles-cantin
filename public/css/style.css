@@ -29,6 +29,7 @@ nav {
   height: 70px;
   display: flex;
   position: fixed;
+  transition: 0.8s;
 }
 nav .nav_container {
   width: 1200px;
@@ -47,7 +48,10 @@ nav .nav_links {
   width: 800px;
   justify-content: space-between;
   font-weight: 300;
-  color: #333333;
+  color: #222222;
+}
+nav:hover {
+  background-color: rgba(255, 255, 255, 0.7);
 }
 
 .home_container {
