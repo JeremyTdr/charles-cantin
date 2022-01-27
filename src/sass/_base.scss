@@ -28,4 +28,13 @@ body {
     font-weight: 300;
     letter-spacing: 0.15rem;
   }
+
+  a,
+  a:hover,
+  a:focus,
+  a:active {
+    outline: none;
+    text-decoration: none;
+    color: $textColor;
+  }
 }

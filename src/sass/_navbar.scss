@@ -25,14 +25,40 @@ nav {
     justify-content: space-between;
     font-weight: 300;
     color: $textColor;
-    transition: 0.75s;
+
+    a {
+      transition: 0.75s;
+    }
   }
 
   &:hover {
     background-color: $mainColor;
 
-    .nav_links {
+    a {
       color: $white;
+    }
+  }
+}
+
+.nav_socials {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+
+  ul {
+    margin: 40px;
+
+    li {
+      color: $mainColor;
+      font-size: 3.5rem;
+    }
+
+    .fa-instagram:hover {
+      color: #c235a6;
+    }
+
+    .fa-facebook-square:hover {
+      color: #4064ad;
     }
   }
 }

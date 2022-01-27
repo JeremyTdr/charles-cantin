@@ -23,6 +23,14 @@ body h4 {
   font-weight: 300;
   letter-spacing: 0.15rem;
 }
+body a,
+body a:hover,
+body a:focus,
+body a:active {
+  outline: none;
+  text-decoration: none;
+  color: #222222;
+}
 
 nav {
   width: 100%;
@@ -49,13 +57,34 @@ nav .nav_links {
   justify-content: space-between;
   font-weight: 300;
   color: #222222;
+}
+nav .nav_links a {
   transition: 0.75s;
 }
 nav:hover {
   background-color: #43555f;
 }
-nav:hover .nav_links {
+nav:hover a {
   color: #fff;
+}
+
+.nav_socials {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+.nav_socials ul {
+  margin: 40px;
+}
+.nav_socials ul li {
+  color: #43555f;
+  font-size: 3.5rem;
+}
+.nav_socials ul .fa-instagram:hover {
+  color: #c235a6;
+}
+.nav_socials ul .fa-facebook-square:hover {
+  color: #4064ad;
 }
 
 .home_container {
