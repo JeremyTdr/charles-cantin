@@ -15,6 +15,8 @@ $mainColor: #43555f;
 $textColor: #222222;
 $white: #fff;
 
+$navHeight: 55px;
+
 body {
   width: 100%;
   overflow-x: hidden;
@@ -29,6 +31,33 @@ body {
     letter-spacing: 0.2rem;
   }
 
+  h2 {
+    margin: 50px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.6rem;
+    color: $mainColor;
+
+    &::before {
+      content: " ";
+      width: 150px;
+      height: 1px;
+      margin-right: 5px;
+      color: $mainColor;
+      border: 1px solid $mainColor;
+    }
+
+    &::after {
+      content: " ";
+      width: 150px;
+      height: 1px;
+      margin-left: 5px;
+      color: $mainColor;
+      border: 1px solid $mainColor;
+    }
+  }
+
   a,
   a:hover,
   a:focus,
@@ -36,5 +65,13 @@ body {
     outline: none;
     text-decoration: none;
     color: $textColor;
+  }
+
+  .container {
+    position: absolute;
+    top: $navHeight;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0 auto;
   }
 }
