@@ -70,6 +70,8 @@ nav {
   height: 55px;
   display: flex;
   position: fixed;
+  top: 0;
+  left: 0;
   z-index: 99;
   transition: 0.75s;
 }
@@ -90,15 +92,25 @@ nav .nav_links {
   width: 800px;
   justify-content: space-between;
   font-weight: 300;
-  color: #222222;
 }
 nav .nav_links a {
+  color: #fff;
   transition: 0.75s;
 }
 nav:hover {
   background-color: #43555f;
 }
-nav:hover a {
+
+nav.sticky {
+  background-color: #fff;
+}
+nav.sticky .nav_links a {
+  color: #222222;
+}
+nav.sticky:hover {
+  background-color: #43555f;
+}
+nav.sticky:hover a {
   color: #fff;
 }
 
