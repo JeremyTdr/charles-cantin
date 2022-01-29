@@ -5,14 +5,22 @@ const mariage = document.querySelectorAll(".mariage");
 
 let index = 0;
 const galeries = document.querySelectorAll(".galerie_imgs>li");
-const tags = ["mariage", "famille", "couple", "grossesse", "bebe", "bapteme"];
+const tags = [
+  "tous",
+  "mariage",
+  "famille",
+  "couple",
+  "grossesse",
+  "bebe",
+  "bapteme",
+];
 
 onglets.forEach((onglet) => {
   onglet.addEventListener("click", () => {
     if (onglet.classList.contains("active")) {
       return;
     } else {
-      onglet.classList.toggle("active");
+      onglet.classList.add("active");
     }
 
     index = onglet.getAttribute("data-anim");
@@ -26,7 +34,7 @@ onglets.forEach((onglet) => {
     for (j = 0; j < tags.length; j++) {
       if (j == index) {
         galeries.forEach((galerie) => {
-          if (galerie.classList.contains(tags[j])) {
+          if (galerie.classList.contains(tags[j]) || j === 0) {
             galerie.classList.add("active");
           } else {
             galerie.classList.remove("active");
