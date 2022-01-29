@@ -182,4 +182,34 @@ nav:hover a {
   display: block;
 }
 
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.cards .card {
+  width: 30%;
+  height: 260px;
+  margin-bottom: 40px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 3px dashed #bdbdbd;
+}
+.cards .card h3 {
+  font-weight: 800;
+  font-size: 1.4rem;
+  color: #43555f;
+}
+.cards .card p {
+  font-weight: 200;
+}
+.cards .card span {
+  font-weight: 300;
+  font-size: 1.3rem;
+  color: #43555f;
+}
+
 /*# sourceMappingURL=style.css.map */

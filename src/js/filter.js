@@ -13,6 +13,7 @@ const tags = [
   "grossesse",
   "bebe",
   "bapteme",
+  "portrait",
 ];
 
 onglets.forEach((onglet) => {
