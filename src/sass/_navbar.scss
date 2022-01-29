@@ -3,6 +3,7 @@ nav {
   height: $navHeight;
   display: flex;
   position: fixed;
+  z-index: 99;
   transition: 0.75s;
 
   .nav_container {

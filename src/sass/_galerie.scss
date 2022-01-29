@@ -1,7 +1,46 @@
-.container {
-  position: absolute;
-  top: 55px;
-  left: 50%;
-  transform: translateX(-50%);
-  margin: 0 auto;
+.filter_onglets {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+
+  .filter {
+    padding: 3px 10px;
+    border: 2px solid $mainColor;
+    border-radius: 5px;
+    background-color: $mainColor;
+    color: $white;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $white;
+      color: $mainColor;
+    }
+  }
+
+  .active {
+    background-color: $white;
+    color: $mainColor;
+  }
+}
+
+.galerie_imgs {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  li {
+    display: none;
+    width: 46%;
+    margin: 20px 0;
+    img {
+      width: 100%;
+    }
+  }
+  .active {
+    display: block;
+  }
 }
