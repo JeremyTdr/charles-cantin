@@ -11,8 +11,10 @@
     </head>
     <body>
         {% include "navbar.njk" %}
-            {{ content | safe }} 
-        {% include "footer.njk" %} 
+        <main>
+            {{ content | safe }}
+        </main>
+        {% include "footer.njk" %}
 
         <script src="/js/navbar.js"></script>
         <script src="/js/filter.js"></script>
