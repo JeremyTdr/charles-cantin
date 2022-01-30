@@ -8,17 +8,9 @@
   margin-bottom: 30px;
 
   .filter {
+    font-weight: 300;
     padding: 3px 10px;
-    border: 2px solid $mainColor;
-    border-radius: 5px;
-    background-color: $mainColor;
-    color: $white;
-    cursor: pointer;
-
-    &:hover {
-      background-color: $white;
-      color: $mainColor;
-    }
+    @include button;
   }
 
   .active {

@@ -1,4 +1,39 @@
 ---
 layout : layout.njk
 ---
-<h1>Contact</h1>
+<div class="container">
+    <h2>Contact</h2>
+    <p>Interessé par une préstation, ou besoin d'informations supplémentaires ? <br>
+        Envoyez-moi un message via le formulaire de contact. Je vous répondrais dans les plus brefs délais !
+    </p>
+    <div class="contact_canvas">
+        <div class="contact_infos">
+            <img src="/assets/logo-min.png" alt="logo charles cantin">
+            <p><i class="fas fa-user"></i> Charles Cantin</p>
+            <p><i class="fas fa-map-marker-alt"></i> Paris, 75000</p>
+            <p><i class="fas fa-mobile-alt"></i> 06 02 03 04 05</p>
+            <p><i class="fas fa-envelope"></i> contact@charlescantin.fr</p>
+            <div class="reseaux">
+                <a href="https://www.instagram.com/" id="instagram" target=”_blank”><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/" id="facebook" target=”_blank”><i class="fab fa-facebook-square"></i></a>
+            </div>
+        </div>
+        <div class="contact_form">
+            <form name="contact" method="POST" data-netlify="true">
+                        <input type="text" name="lastname" id="lastname" placeholder=" Nom" required>
+
+                        <input type="text" name="firstname" id="firstname" placeholder=" Prénom" required>
+
+                        <input type="tel" name="phone" id="phone" placeholder=" Téléphone" required>
+
+                        <input type="email" name="email" id="email" placeholder=" Email" required>
+                        
+                        <br>
+                        <textarea id="message" name="message" rows="10" placeholder="Ecrivez votre message..." required></textarea>
+                        <br>
+
+                        <button id="submitBtn" type="submit" name="submit">Envoyer</button>
+                    </form>
+        </div>
+    </div>
+</div>

@@ -56,6 +56,9 @@ body h2::after {
     opacity: 1;
   }
 }
+body p {
+  font-weight: 200;
+}
 body a,
 body a:hover,
 body a:focus,
@@ -181,6 +184,7 @@ nav.sticky:hover a {
   margin-bottom: 30px;
 }
 .filter_onglets .filter {
+  font-weight: 300;
   padding: 3px 10px;
   border: 2px solid #43555f;
   border-radius: 5px;
@@ -242,6 +246,87 @@ nav.sticky:hover a {
 .cards .card span {
   font-weight: 300;
   font-size: 1.3rem;
+  color: #43555f;
+}
+
+.contact_canvas {
+  width: 100%;
+  margin: 50px auto 70px;
+  display: flex;
+}
+.contact_canvas .contact_infos {
+  width: 50%;
+  padding: 0 20px 20px 20px;
+  background-color: #43555f;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1.8px solid #43555f;
+  border-radius: 5px 0 0 5px;
+}
+.contact_canvas .contact_infos img {
+  width: 150px;
+}
+.contact_canvas .contact_infos p {
+  margin: 10px auto;
+}
+.contact_canvas .contact_infos p i {
+  font-size: 1.4rem;
+  margin-right: 10px;
+}
+.contact_canvas .contact_infos .reseaux .fab {
+  margin: 15px;
+  font-size: 3rem;
+  color: #fff;
+  cursor: pointer;
+}
+.contact_canvas .contact_infos .reseaux .fab:hover {
+  color: #bdbdbd;
+}
+.contact_canvas .contact_form {
+  width: 50%;
+  padding: 20px;
+  border: 1.8px solid #43555f;
+  border-radius: 0 5px 5px 0;
+}
+.contact_canvas .contact_form form {
+  display: flex;
+  flex-direction: column;
+}
+.contact_canvas .contact_form form input {
+  width: 60%;
+  height: 30px;
+  margin: 10px 0;
+  padding: 0 4px;
+  font-family: "Poppins";
+  border: 1.8px solid #222222;
+  border-radius: 5px;
+}
+.contact_canvas .contact_form form textarea {
+  width: 100%;
+  height: 120px;
+  padding: 4px;
+  border: 1.8px solid #222222;
+  border-radius: 5px;
+}
+.contact_canvas .contact_form form textarea:focus,
+.contact_canvas .contact_form form input:focus {
+  outline: none;
+}
+.contact_canvas .contact_form form button {
+  width: fit-content;
+  padding: 5px 20px;
+  font-size: 1.1rem;
+  border: 2px solid #43555f;
+  border-radius: 5px;
+  background-color: #43555f;
+  color: #fff;
+  cursor: pointer;
+}
+.contact_canvas .contact_form form button:hover {
+  background-color: #fff;
   color: #43555f;
 }
 
