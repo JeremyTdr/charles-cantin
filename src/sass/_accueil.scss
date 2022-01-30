@@ -9,9 +9,24 @@
   justify-content: center;
 
   h1 {
+    position: absolute;
     font-size: 3.4rem;
     color: $white;
-    margin: 0;
-    padding: 0;
+    margin: 0 auto;
+    animation-duration: 1.5s;
+    animation-name: slidein;
+  }
+
+  @keyframes slidein {
+    from {
+      top: 40%;
+      opacity: 0;
+    }
+
+    to {
+      top: 50%;
+      transform: translateY(-50%);
+      opacity: 1;
+    }
   }
 }
