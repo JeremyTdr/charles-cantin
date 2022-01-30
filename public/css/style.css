@@ -30,6 +30,7 @@ body h2 {
   justify-content: center;
   font-size: 2.6rem;
   color: #43555f;
+  animation: fadein 1.6s;
 }
 body h2::before {
   content: " ";
@@ -46,6 +47,14 @@ body h2::after {
   margin-left: 5px;
   color: #43555f;
   border: 1px solid #43555f;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 body a,
 body a:hover,
