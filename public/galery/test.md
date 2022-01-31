@@ -1,7 +1,7 @@
 ---
 title: test
 author: test
-gategory: mariage
-image: assets/img/mariage-lac.jpg
+gategory: bebe
+image: assets/img/bebe-photo.jpg
 imageAlt: test
 ---

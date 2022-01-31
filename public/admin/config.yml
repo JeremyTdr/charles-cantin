@@ -15,5 +15,6 @@ collections:
       - { label: "Titre", name: "title", widget: "string" }
       - { label: "Auteur", name: "author", widget: "string" }
       - { label: "Catégorie", name: "category", widget: "string" }
+      - { label: "Tag", name: "tags", widget: "list" }
       - { label: "Image", name: "image", widget: "image" }
       - { label: "Description de l'image", name: "imageAlt", widget: "string" }
