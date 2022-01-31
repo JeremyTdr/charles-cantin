@@ -1,0 +1,25 @@
+backend:
+  name: git-gateway
+  branch: master # Branch to update (optional; defaults to master)
+
+media_folder: "public/assets/img"
+public_folder: "assets/img"
+
+collections:
+  - name: "galerie"
+    label: "Galerie"
+    folder: "src/galery"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Titre", name: "titre", widget: "string" }
+      - { label: "Auteur", name: "author", widget: "string" }
+      - {
+          label: "Catégorie",
+          name: "gategory",
+          widget: "list",
+          allow_add: false,
+          default: ["mariage"],
+        }
+      - { label: "Image", name: "image", widget: "image" }
+      - { label: "Description de l'image", name: "imageAlt", widget: "string" }
