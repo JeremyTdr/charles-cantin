@@ -1,7 +1,7 @@
 ---
 title: test
 author: test
-gategory: famille
-image: /assets/img/grossesse-champ.jpg
+gategory: mariage
+image: assets/img/mariage-lac.jpg
 imageAlt: test
 ---
