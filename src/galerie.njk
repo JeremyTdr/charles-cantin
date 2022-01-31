@@ -18,8 +18,8 @@ layout : layout.njk
 
     <ul class="galerie_imgs">
 
-        {% for post in collections.post %}
-        <li class="{{post.data.category}} active"><img src="{{post.data.image}}" alt="{{post.data.imageAlt}}"></li>
+        {% for galerie in collections.galerie %}
+        <li class="{{galerie.data.category}} active"><img src="{{galerie.data.image}}" alt="{{galerie.data.imageAlt}}"></li>
         {% endfor %}
 
         {#<li class="famille active"><img src="/assets/img/famille-plage.jpg" alt="photo famille à la plage"></li>
