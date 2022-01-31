@@ -1,7 +1,9 @@
 ---
 title: test
 author: test
-gategory: bebe
-image: assets/img/bebe-photo.jpg
+category: grossesse
+tags:
+  - galerie
+image: /assets/img/grossesse-champ.jpg
 imageAlt: test
 ---
