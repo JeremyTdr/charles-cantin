@@ -14,12 +14,6 @@ collections:
     fields:
       - { label: "Titre", name: "title", widget: "string" }
       - { label: "Auteur", name: "author", widget: "string" }
-      - {
-          label: "Catégorie",
-          name: "gategory",
-          widget: "list",
-          allow_add: false,
-          default: ["mariage"],
-        }
+      - { label: "Catégorie", name: "gategory", widget: "string" }
       - { label: "Image", name: "image", widget: "image" }
       - { label: "Description de l'image", name: "imageAlt", widget: "string" }
