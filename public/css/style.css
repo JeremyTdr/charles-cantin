@@ -84,44 +84,55 @@ nav {
   z-index: 99;
   transition: 0.75s;
 }
-nav .nav_container {
-  width: 1200px;
+
+.nav_container {
+  width: 85%;
   margin: 0 auto;
   padding: 3px 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-nav img {
+
+img {
   height: 100%;
   border-radius: 100%;
 }
-nav .nav_links {
-  display: flex;
-  width: 800px;
-  justify-content: space-between;
-  font-weight: 300;
-}
-nav .nav_links a {
+
+.fa-bars {
   color: #fff;
-  transition: 0.75s;
-}
-nav:hover {
-  background-color: #43555f;
+  font-size: 2.2rem;
 }
 
-nav.sticky {
-  position: sticky;
-  background-color: #fff;
+.nav_links {
+  position: absolute;
+  right: 0px;
+  width: 100%;
+  top: 55px;
+  flex-direction: column;
+  justify-content: flex-start;
+  font-size: 1.2rem;
+  text-align: center;
+  animation-duration: 1s;
+  animation-name: fadein;
+  display: none;
+}
+.nav_links li {
+  margin-bottom: 20px;
+}
+.nav_links a {
+  color: #fff;
+}
+
+.nav_links.active {
+  display: block;
+}
+
+nav.sticky .fa-bars {
+  color: #222222;
 }
 nav.sticky .nav_links a {
   color: #222222;
-}
-nav.sticky:hover {
-  background-color: #43555f;
-}
-nav.sticky:hover a {
-  color: #fff;
 }
 
 .nav_socials {
@@ -131,11 +142,11 @@ nav.sticky:hover a {
   z-index: 90;
 }
 .nav_socials ul {
-  margin: 40px;
+  margin: 25px;
 }
 .nav_socials ul li {
   color: #43555f;
-  font-size: 3.5rem;
+  font-size: 3rem;
 }
 .nav_socials ul .fa-instagram:hover {
   color: #c235a6;
@@ -144,6 +155,42 @@ nav.sticky:hover a {
   color: #4064ad;
 }
 
+@media screen and (min-width: 768px) {
+  nav .fa-bars {
+    display: none;
+  }
+  nav .nav_links {
+    display: flex;
+    flex-direction: row;
+    width: 800px;
+    justify-content: space-between;
+    font-weight: 300;
+  }
+  nav:hover {
+    background-color: #43555f;
+  }
+
+  nav.sticky {
+    position: sticky;
+    background-color: #fff;
+  }
+  nav.sticky .nav_links a {
+    color: #222222;
+  }
+  nav.sticky:hover {
+    background-color: #43555f;
+  }
+  nav.sticky:hover a {
+    color: #fff;
+  }
+
+  .nav_socials ul {
+    margin: 40px;
+  }
+  .nav_socials ul li {
+    font-size: 3.5rem;
+  }
+}
 .home_container {
   width: 100vw;
   height: 100vh;
