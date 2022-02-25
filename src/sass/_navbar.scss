@@ -97,11 +97,17 @@ nav.sticky {
     }
 
     .nav_links {
+      position: inherit;
       display: flex;
       flex-direction: row;
       width: 800px;
+      align-items: center;
       justify-content: space-between;
       font-weight: 300;
+
+      li {
+        margin: 0 auto;
+      }
     }
 
     &:hover {

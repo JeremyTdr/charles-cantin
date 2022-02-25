@@ -68,10 +68,15 @@ body a:active {
   color: #222222;
 }
 body .container {
-  width: 1000px;
+  width: 85%;
   text-align: center;
   padding-top: 80px;
   margin: 0 auto 50px;
+}
+@media screen and (min-width: 768px) {
+  body .container {
+    width: 1000px;
+  }
 }
 
 nav {
@@ -160,11 +165,16 @@ nav.sticky .nav_links a {
     display: none;
   }
   nav .nav_links {
+    position: inherit;
     display: flex;
     flex-direction: row;
     width: 800px;
+    align-items: center;
     justify-content: space-between;
     font-weight: 300;
+  }
+  nav .nav_links li {
+    margin: 0 auto;
   }
   nav:hover {
     background-color: #43555f;
@@ -232,12 +242,11 @@ nav.sticky .nav_links a {
   }
 }
 .filter_onglets {
-  width: 100%;
-  height: 40px;
+  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
+  gap: 15px;
   margin-bottom: 30px;
 }
 .filter_onglets .filter {
@@ -260,22 +269,42 @@ nav.sticky .nav_links a {
 
 .galerie_imgs {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   align-items: center;
   justify-content: space-between;
 }
 .galerie_imgs li {
   display: none;
-  width: 46%;
+  width: 100%;
   margin: 20px 0;
 }
 .galerie_imgs li img {
   width: 100%;
+  border-radius: 1px;
 }
 .galerie_imgs .active {
   display: block;
 }
 
+@media screen and (min-width: 768px) {
+  .filter_onglets {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .galerie_imgs {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .galerie_imgs li {
+    width: 46%;
+  }
+}
 .cards {
   display: flex;
   align-items: center;
