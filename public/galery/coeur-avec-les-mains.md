@@ -1,7 +1,9 @@
 ---
 title: Coeur avec les mains
 author: Charles Cantin
-category: mariage
+category:
+  - mariage
+  - couple
 tags:
   - galerie
 image: /assets/img/mariage-coeur.jpg
