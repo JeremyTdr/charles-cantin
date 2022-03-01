@@ -71,11 +71,12 @@ body .container {
   width: 85%;
   text-align: center;
   padding-top: 80px;
-  margin: 0 auto 50px;
+  margin: 0 auto 100px;
 }
 @media screen and (min-width: 768px) {
   body .container {
     width: 1000px;
+    margin-bottom: 150px;
   }
   body h2 {
     margin: 0 auto 100px;
@@ -471,14 +472,12 @@ footer {
   font-weight: 200;
   font-size: 0.7rem;
   color: #fff;
-  margin-top: 110px;
   z-index: 95;
 }
 
 @media screen and (min-width: 768px) {
   footer {
     font-size: 0.8rem;
-    margin-top: 150px;
   }
 }
 
