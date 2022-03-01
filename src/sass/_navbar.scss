@@ -7,51 +7,67 @@ nav {
   left: 0;
   z-index: 99;
   transition: 0.75s;
+}
 
-  .nav_container {
-    width: 1200px;
-    margin: 0 auto;
-    padding: 3px 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
+.nav_container {
+  width: 85%;
+  margin: 0 auto;
+  padding: 3px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
-  img {
-    height: 100%;
-    border-radius: 100%;
-  }
+img {
+  height: 90%;
+  border-radius: 100%;
+  cursor: pointer;
+}
 
-  .nav_links {
-    display: flex;
-    width: 800px;
-    justify-content: space-between;
-    font-weight: 300;
+.fa-bars {
+  color: $white;
+  font-size: 2rem;
+}
 
+.nav_links {
+  position: absolute;
+  right: 0px;
+  width: 100%;
+  top: $navHeight;
+  flex-direction: column;
+  justify-content: flex-start;
+  font-size: 1rem;
+  text-align: center;
+  animation-duration: 0.8s;
+  animation-name: fadein;
+  display: none;
+
+  li {
+    margin: 20px auto;
     a {
       color: $white;
-      transition: 0.75s;
     }
   }
+}
 
-  &:hover {
-    background-color: $mainColor;
-  }
+.nav_links.active {
+  display: block;
+  background-color: rgba($white, 0.1);
 }
 
 nav.sticky {
   position: sticky;
   background-color: $white;
 
+  .fa-bars {
+    color: $textColor;
+  }
+
   .nav_links {
+    background-color: rgba($white, 0.9);
+
     a {
       color: $textColor;
-    }
-  }
-  &:hover {
-    background-color: $mainColor;
-    a {
-      color: $white;
     }
   }
 }
@@ -63,11 +79,13 @@ nav.sticky {
   z-index: 90;
 
   ul {
-    margin: 40px;
+    margin: 32px 25px;
+    display: flex;
+    flex-direction: column;
 
     li {
-      color: $mainColor;
-      font-size: 3.5rem;
+      color: rgba($mainColor, 0.9);
+      font-size: 2.8rem;
     }
 
     .fa-instagram:hover {
@@ -76,6 +94,59 @@ nav.sticky {
 
     .fa-facebook-square:hover {
       color: #4064ad;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  nav {
+    .fa-bars {
+      display: none;
+    }
+
+    .nav_links {
+      position: inherit;
+      display: flex;
+      flex-direction: row;
+      width: 800px;
+      align-items: center;
+      justify-content: space-between;
+      font-weight: 300;
+      background-color: inherit;
+
+      li {
+        margin: 0 auto;
+
+        a {
+          color: $white;
+        }
+      }
+    }
+
+    &:hover {
+      background-color: $mainColor;
+    }
+  }
+
+  nav.sticky {
+    .nav_links {
+      background-color: inherit;
+    }
+    &:hover {
+      background-color: $mainColor;
+      a {
+        color: $white;
+      }
+    }
+  }
+
+  .nav_socials {
+    ul {
+      margin: 40px;
+
+      li {
+        font-size: 3.5rem;
+      }
     }
   }
 }
