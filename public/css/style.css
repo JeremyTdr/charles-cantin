@@ -167,6 +167,7 @@ nav.sticky .nav_links a {
 .nav_socials ul li {
   color: rgba(67, 85, 95, 0.9);
   font-size: 2.8rem;
+  cursor: pointer;
 }
 .nav_socials ul .fa-instagram:hover {
   color: #c235a6;
