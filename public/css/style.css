@@ -195,6 +195,9 @@ nav.sticky .nav_links a {
     background-color: #43555f;
   }
 
+  nav.sticky .nav_links {
+    background-color: inherit;
+  }
   nav.sticky:hover {
     background-color: #43555f;
   }
@@ -464,9 +467,15 @@ footer {
   align-items: center;
   justify-content: center;
   font-weight: 200;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   color: #fff;
   z-index: 95;
+}
+
+@media screen and (min-width: 768px) {
+  footer {
+    font-size: 0.8rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

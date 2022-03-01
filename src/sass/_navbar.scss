@@ -126,6 +126,9 @@ nav.sticky {
   }
 
   nav.sticky {
+    .nav_links {
+      background-color: inherit;
+    }
     &:hover {
       background-color: $mainColor;
       a {
