@@ -78,11 +78,13 @@ nav.sticky {
   z-index: 90;
 
   ul {
-    margin: 25px;
+    margin: 32px 25px;
+    display: flex;
+    flex-direction: column;
 
     li {
-      color: $mainColor;
-      font-size: 3rem;
+      color: rgba($mainColor, 0.9);
+      font-size: 2.8rem;
     }
 
     .fa-instagram:hover {
