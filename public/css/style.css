@@ -106,6 +106,7 @@ nav {
 img {
   height: 90%;
   border-radius: 100%;
+  cursor: pointer;
 }
 
 .fa-bars {
