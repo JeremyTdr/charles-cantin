@@ -1,12 +1,14 @@
 const navbar = document.querySelector("nav");
 const thisLocation = window.location.toString();
 const links = document.querySelector(".nav_links");
-const barButton = document.querySelector(".fa-bars");
+const burger = document.getElementById("nav-icon");
 
-barButton.addEventListener("click", () => {
+burger.addEventListener("click", () => {
   if (links.classList.contains("active")) {
+    burger.classList.remove("open");
     links.classList.remove("active");
   } else {
+    burger.classList.add("open");
     links.classList.add("active");
   }
 });

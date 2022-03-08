@@ -31,44 +31,47 @@ img {
 
 .nav_links {
   position: absolute;
-  right: 0px;
+  right: -800px;
   width: 100%;
   top: $navHeight;
   flex-direction: column;
   justify-content: flex-start;
-  font-size: 1rem;
   text-align: center;
-  animation-duration: 0.8s;
-  animation-name: fadein;
+  animation: fromRight;
+  animation-duration: 0.5s;
   display: none;
 
   li {
-    margin: 20px auto;
+    margin: 35px auto;
     a {
-      color: $white;
+      color: $textColor;
+      font-size: 1.5rem;
+      font-family: "Poiret One";
+      font-weight: 600;
+      letter-spacing: 0.2rem;
     }
   }
 }
 
 .nav_links.active {
   display: block;
-  background-color: rgba($white, 0.1);
+  right: 0;
+  background-color: $white;
+  height: 100vh;
 }
 
 nav.sticky {
   position: sticky;
   background-color: $white;
+}
 
-  .fa-bars {
-    color: $textColor;
+@keyframes fromRight {
+  from {
+    right: -800px;
   }
 
-  .nav_links {
-    background-color: rgba($white, 0.9);
-
-    a {
-      color: $textColor;
-    }
+  to {
+    right: 0;
   }
 }
 
@@ -97,6 +100,80 @@ nav.sticky {
       color: #4064ad;
     }
   }
+}
+
+//--- HAAMBURGER ---//
+#nav-icon {
+  width: 45px;
+  height: $navHeight;
+  position: relative;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+#nav-icon span {
+  display: block;
+  position: absolute;
+  height: 5px;
+  width: 100%;
+  left: 0;
+  background: $mainColor;
+  border-radius: 9px;
+  opacity: 1;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.25s ease-in-out;
+  -moz-transition: 0.25s ease-in-out;
+  -o-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+}
+
+#nav-icon span:nth-child(1) {
+  top: 10px;
+}
+
+#nav-icon span:nth-child(2),
+#nav-icon span:nth-child(3) {
+  top: 25px;
+}
+
+#nav-icon span:nth-child(4) {
+  top: 40px;
+}
+
+#nav-icon.open span:nth-child(1) {
+  top: 10px;
+  width: 0%;
+  left: 50%;
+}
+
+#nav-icon.open span:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+#nav-icon.open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+#nav-icon.open span:nth-child(4) {
+  top: 10px;
+  width: 0%;
+  left: 50%;
 }
 
 @media screen and (min-width: 768px) {
