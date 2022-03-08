@@ -178,7 +178,7 @@ nav.sticky {
 
 @media screen and (min-width: 768px) {
   nav {
-    .fa-bars {
+    #nav-icon {
       display: none;
     }
 
@@ -197,6 +197,10 @@ nav.sticky {
 
         a {
           color: $white;
+          font-size: 1rem;
+          font-family: "Poppins";
+          font-weight: 300;
+          letter-spacing: normal;
         }
       }
     }
@@ -209,6 +213,9 @@ nav.sticky {
   nav.sticky {
     .nav_links {
       background-color: inherit;
+      a {
+        color: $mainColor;
+      }
     }
     &:hover {
       background-color: $mainColor;

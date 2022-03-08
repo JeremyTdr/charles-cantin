@@ -254,7 +254,7 @@ nav.sticky {
 }
 
 @media screen and (min-width: 768px) {
-  nav .fa-bars {
+  nav #nav-icon {
     display: none;
   }
   nav .nav_links {
@@ -272,6 +272,10 @@ nav.sticky {
   }
   nav .nav_links li a {
     color: #fff;
+    font-size: 1rem;
+    font-family: "Poppins";
+    font-weight: 300;
+    letter-spacing: normal;
   }
   nav:hover {
     background-color: #43555f;
@@ -279,6 +283,9 @@ nav.sticky {
 
   nav.sticky .nav_links {
     background-color: inherit;
+  }
+  nav.sticky .nav_links a {
+    color: #43555f;
   }
   nav.sticky:hover {
     background-color: #43555f;
