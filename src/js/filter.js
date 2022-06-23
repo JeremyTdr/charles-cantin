@@ -6,14 +6,14 @@ const mariage = document.querySelectorAll(".mariage");
 let index = 0;
 const galeries = document.querySelectorAll(".galerie_imgs>li");
 const tags = [
-  "tous",
-  "mariage",
-  "famille",
-  "couple",
-  "grossesse",
-  "bebe",
-  "bapteme",
-  "portrait",
+  "Tous",
+  "Mariage",
+  "Famille",
+  "Couple",
+  "Grossesse",
+  "Bebe",
+  "Bapteme",
+  "Portrait",
 ];
 
 onglets.forEach((onglet) => {

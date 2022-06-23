@@ -18,8 +18,16 @@ collections:
           label: "Catégorie",
           name: "category",
           widget: select,
-          options: ["Mariage", "Bebe", "Portrait", "Paysage"],
+          options:
+            [
+              "Mariage",
+              "Famille",
+              "Couple",
+              "Grossesse",
+              "Bebe",
+              "Bapteme",
+              "Portrait",
+            ],
         }
-      - { label: "Tags", name: "tags", widget: "list", default: ["galerie"] }
       - { label: "Image", name: "image", widget: "image" }
       - { label: "Description de l'image", name: "imageAlt", widget: "string" }
