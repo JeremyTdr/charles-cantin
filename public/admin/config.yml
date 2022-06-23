@@ -16,7 +16,7 @@ collections:
       - { label: "Auteur", name: "author", widget: "string" }
       - {
           label: "Catégorie",
-          name: "category",
+          name: "categorie",
           widget: select,
           options:
             [
