@@ -29,6 +29,5 @@ collections:
               "Portrait",
             ],
         }
-      - { label: "Tag", name: "tags", widget: "string", default: "galerie" }
       - { label: "Image", name: "image", widget: "image" }
       - { label: "Description de l'image", name: "imageAlt", widget: "string" }
