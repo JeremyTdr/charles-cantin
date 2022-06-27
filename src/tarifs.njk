@@ -6,44 +6,12 @@ layout : layout.njk
     <h2>Tarifs et prestations</h2>
 
     <div class="cards">
-        {# <div class="card">
-            <h3>Juste moi</h3>
-            <p>Séance pour une personne, en extérieur ou en studio</p>
-            <span>130€</span>
-        </div> #}
-        {# <div class="card">
-            <h3>Pour deux</h3>
-            <p>Pour deux personnes, en extérieur ou en studio</p>
-            <span>195€</span>
-        </div>
-        <div class="card">
-            <h3>Famille</h3>
-            <p>Pour la famille ou les amis jusqu’à 4 personnes, en extérieur ou en studio
-            30 euros en supplément par personne au-delà de 4 (hormis enfant jusqu’à 2 ans)</p>
-            <span>200€</span>
-        </div>
-        <div class="card">
-            <h3>Il était une fois</h3>
-            <p>Photo de grossesse (à votre domicile, en extérieur ou en studio)</p>
-            <span>160€</span>
-        </div>
-        <div class="card">
-            <h3>Mon bébé</h3>
-            <p>Photo d’enfant jusqu’à 3 ans (photo à domicile)</p>
-            <span>100€</span>
-        </div>
-        <div class="card">
-            <h3>J'immortalise l'événement</h3>
-            <p>Prestation de mariage ou baptême sur devis</p>
-            <span>Sur mesure</span>
-        </div> #}
-
         {% for prices in collections.prices %}
-        <div class="card">
-            <h3>{{prices.data.title}}</h3>
-            <p>{{prices.data.description}}</p>
-            <span>{{prices.data.price}}</span>
-        </div>
+            <div class="card">
+                <h3>{{prices.data.title}}</h3>
+                <p>{{prices.data.description}}</p>
+                <span>{{prices.data.price}}</span>
+            </div>
         {% endfor %}
     </div>
 </div>
