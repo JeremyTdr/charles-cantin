@@ -37,5 +37,13 @@ layout : layout.njk
             <p>Prestation de mariage ou baptême sur devis</p>
             <span>Sur mesure</span>
         </div>
+
+        {% for prices in collections.prices %}
+        <div class="card">
+            <h3>{{prices.data.name}}</h3>
+            <p>{{prices.data.description}}</p>
+            <span>{{prices.data.price}}</span>
+        </div>
+        {% endfor %}
     </div>
 </div>
