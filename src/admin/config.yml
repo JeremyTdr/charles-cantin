@@ -6,8 +6,8 @@ media_folder: "public/assets/img"
 public_folder: "/assets/img"
 
 collections:
-  - name: "galery"
-    label: "Galerie"
+  - label: "Galerie"
+    name: "galery"
     folder: "src/galery"
     create: true
     slug: "{{slug}}"
@@ -35,14 +35,14 @@ collections:
             ],
         }
       - { label: "Image", name: "image", widget: "image" }
-      - { label: "Description de l'image", name: "imageAlt", widget: "string" },
+      - { label: "Description de l'image", name: "imageAlt", widget: "string" }
     
-    - name: "prices"
-    label: "Tarifs"
-    folder: "src/prices"
-    create: true
-    slug: "{{slug}}"
-    fields:
-      - { label: "Titre", name: "title", widget: "string" }
-      - { label: "Description", name: "description", widget: "text"}
-      - { label: "Prix", name: "price", widget: "string" }
+    - label: "Tarifs" 
+      name: "prices"
+      folder: "src/prices"
+      create: true
+      slug: "{{slug}}"
+      fields:
+        - { label: "Titre", name: "title", widget: "string" }
+        - { label: "Description", name: "description", widget: "text"}
+        - { label: "Prix", name: "price", widget: "string" }
