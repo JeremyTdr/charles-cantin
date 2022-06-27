@@ -6,8 +6,8 @@ media_folder: "public/assets/img"
 public_folder: "/assets/img"
 
 collections:
-  - label: "Galerie"
-    name: "galery"
+  - name: "galery"
+    label: "Galerie"
     folder: "src/galery"
     create: true
     slug: "{{slug}}"
@@ -37,8 +37,8 @@ collections:
       - { label: "Image", name: "image", widget: "image" }
       - { label: "Description de l'image", name: "imageAlt", widget: "string" }
     
-    - label: "Tarifs" 
-      name: "prices"
+    - name: "prices"
+      label: "Tarifs"
       folder: "src/prices"
       create: true
       slug: "{{slug}}"
