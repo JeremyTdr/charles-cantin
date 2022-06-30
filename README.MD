@@ -8,7 +8,7 @@ Mise en valeur du travail du photographe professionnel Charles Cantin ainsi que 
 **> Node JS**
 
 ```
-Téléchargement et installation sur le site de [Node JS](https://nodejs.org/en/)
+Téléchargement et installation sur le site de [Node JS](https://nodejs.org/en/).
 Vérifier le status d'installation en regardant la version installée : npm -v
 ```
 
