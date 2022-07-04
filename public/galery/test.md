@@ -1,7 +1,8 @@
 ---
-title: test
-author: test
+title: Bebe ordinateur
+author:
+  - Charles Cantin
 category: Bebe
 image: /assets/img/bebe-ordinateur.jpg
-imageAlt: test
+imageAlt: bebe devant un ordinateur
 ---
