@@ -1,5 +1,5 @@
 ---
-title: 1 - Juste moi
+title: Juste moi
 description: Séance pour une personne, en extérieur ou en studio
 price: 130€
 ---
